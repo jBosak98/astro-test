@@ -1,7 +1,7 @@
+import react from '@astrojs/react';
 import sitemap from '@astrojs/sitemap';
-import { defineConfig } from 'astro/config';
-
 import compress from 'astro-compress';
+import { defineConfig } from 'astro/config';
 
 // https://astro.build/config
 export default defineConfig({
@@ -17,7 +17,7 @@ export default defineConfig({
   // Astro sitemap.
   //
   // Ref: https://docs.astro.build/en/guides/integrations-guide/sitemap/
-  integrations: [sitemap(), compress()],
+  integrations: [sitemap(), compress(), react()],
   // Listen on all addresses, including LAN and public addresses.
   //
   // Ref: https://docs.astro.build/en/reference/configuration-reference/#serverhost
